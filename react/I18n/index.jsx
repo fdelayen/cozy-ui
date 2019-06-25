@@ -1,5 +1,5 @@
 /**
- * preact plugin that provides an I18n helper using a Higher Order Component.
+ * Provides an I18n helper using a Higher Order Component.
  */
 
 'use strict'
@@ -33,12 +33,6 @@ export class I18n extends Component {
       f: this.format,
       lang: this.props.lang
     }
-  }
-
-  // for preact
-  // eslint-disable-next-line react/no-deprecated
-  componentWillReceiveProps(nextProps) {
-    this.UNSAFE_componentWillReceiveProps(nextProps)
   }
 
   UNSAFE_componentWillReceiveProps = nextProps => {
